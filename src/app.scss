@@ -1,0 +1,72 @@
+//colors
+$teambitPink: #ffe7d2;
+$teambitBrown: #58402c;
+$teambitBlue: #30488f;
+$teambitWhite: #ffffff;
+
+@mixin container80 {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+@mixin flexRow {
+  display: flex;
+  align-items: center;
+}
+
+@mixin altButton {
+  color: $teambitBlue;
+  background-color: $teambitWhite;
+  border: 1px solid $teambitBlue;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $teambitBrown;
+}
+
+body {
+  color: $teambitBrown;
+}
+
+header {
+  height: 70px;
+
+  .header-container {
+    @include container80();
+    @include flexRow();
+    justify-content: space-between;
+    border-bottom: 1px solid $teambitBrown;
+  }
+  ul {
+    @include flexRow();
+    li {
+      margin-left: 15px;
+      i {
+        margin-left: 5px;
+      }
+    }
+    button {
+      @include altButton();
+      margin-left: 10px;
+    }
+  }
+}
