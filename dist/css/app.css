@@ -1,0 +1,121 @@
+header {
+  height: 70px;
+}
+header .header-container {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #58402c;
+}
+header ul {
+  display: flex;
+  align-items: center;
+}
+header ul li {
+  margin-left: 15px;
+}
+header ul li i {
+  margin-left: 5px;
+}
+header ul button {
+  color: #30488f;
+  background-color: #ffffff;
+  border: 1px solid #30488f;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+header ul button a {
+  color: #30488f;
+}
+header ul button img {
+  height: 20px;
+  width: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #58402c;
+}
+
+body {
+  color: #58402c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main .jumbotron {
+  background-color: #ffffff;
+  height: 510px;
+  margin-top: 50px;
+}
+main .jumbotron .jumbotron-container {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+main .jumbotron .jumbotron-container .jumbotron-text {
+  width: 50%;
+}
+main .jumbotron .jumbotron-container .jumbotron-text h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+main .jumbotron .jumbotron-container .jumbotron-text p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+main .jumbotron .jumbotron-container .jumbotron-text button {
+  color: #ffffff;
+  background-color: #30488f;
+  border: 1px solid #30488f;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .jumbotron .jumbotron-container .jumbotron-text button a {
+  color: #ffffff;
+}
+main .jumbotron .jumbotron-container .jumbotron-text button img {
+  height: 20px;
+  width: 20px;
+}
+main .jumbotron .jumbotron-container .jumbotron-text span {
+  font-size: 13px;
+  color: #bdb5af;
+  margin: 0px 20px 0px 20px;
+}
+main .jumbotron .jumbotron-container .jumbotron-text .buttons {
+  margin-bottom: 20px;
+}
+main .jumbotron .jumbotron-container .jumbotron-text .menu-link {
+  font-size: 14px;
+  color: #58402c;
+}
+main .jumbotron .jumbotron-container .jumbotron-text .menu-link i {
+  margin-left: 10px;
+}
+main .jumbotron .jumbotron-container .jumbotron-img {
+  height: 100%;
+  width: 50%;
+}
+main .jumbotron .jumbotron-container .jumbotron-img img {
+  width: 100%;
+}

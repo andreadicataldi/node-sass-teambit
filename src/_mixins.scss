@@ -1,0 +1,44 @@
+@mixin container {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+@mixin mainButton {
+  color: $teambitWhite;
+  background-color: $teambitBlue;
+  border: 1px solid $teambitBlue;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  a {
+    color: $teambitWhite;
+  }
+  img {
+    height: 20px;
+    width: 20px;
+  }
+}
+@mixin altButton {
+  color: $teambitBlue;
+  background-color: $teambitWhite;
+  border: 1px solid $teambitBlue;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  a {
+    color: $teambitBlue;
+  }
+  img {
+    height: 20px;
+    width: 20px;
+  }
+}
+@mixin h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+@mixin pJumbotron {
+  font-size: 22px;
+  line-height: 1.5;
+}

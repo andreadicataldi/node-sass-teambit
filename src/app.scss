@@ -1,33 +1,8 @@
-//colors
-$teambitPink: #ffe7d2;
-$teambitBrown: #58402c;
-$teambitBlue: #30488f;
-$teambitWhite: #ffffff;
+@import "colors";
+@import "mixins";
+@import "header";
 
-@mixin container80 {
-  height: 100%;
-  width: 80%;
-  margin: auto;
-}
-
-@mixin flexRow {
-  display: flex;
-  align-items: center;
-}
-
-@mixin altButton {
-  color: $teambitBlue;
-  background-color: $teambitWhite;
-  border: 1px solid $teambitBlue;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  img {
-    height: 20px;
-    width: 20px;
-  }
-}
-
+//page
 * {
   margin: 0;
   padding: 0;
@@ -45,28 +20,53 @@ a {
 
 body {
   color: $teambitBrown;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  height: 70px;
-
-  .header-container {
-    @include container80();
-    @include flexRow();
-    justify-content: space-between;
-    border-bottom: 1px solid $teambitBrown;
-  }
-  ul {
-    @include flexRow();
-    li {
-      margin-left: 15px;
-      i {
-        margin-left: 5px;
+main {
+  .jumbotron {
+    background-color: $teambitWhite;
+    height: 510px;
+    margin-top: 50px;
+    .jumbotron-container {
+      @include container();
+      display: flex;
+      .jumbotron-text {
+        width: 50%;
+        h1 {
+          @include h1();
+          margin-bottom: 30px;
+        }
+        p {
+          @include pJumbotron();
+          margin-bottom: 40px;
+        }
+        button {
+          @include mainButton();
+        }
+        span {
+          font-size: 13px;
+          color: #bdb5af;
+          margin: 0px 20px 0px 20px;
+        }
+        .buttons {
+          margin-bottom: 20px;
+        }
+        .menu-link {
+          font-size: 14px;
+          color: $teambitBrown;
+          i {
+            margin-left: 10px;
+          }
+        }
       }
-    }
-    button {
-      @include altButton();
-      margin-left: 10px;
+      .jumbotron-img {
+        height: 100%;
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }

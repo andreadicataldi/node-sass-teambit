@@ -1,0 +1,25 @@
+header {
+  height: 70px;
+
+  .header-container {
+    @include container();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $teambitBrown;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      margin-left: 15px;
+      i {
+        margin-left: 5px;
+      }
+    }
+    button {
+      @include altButton();
+      margin-left: 10px;
+    }
+  }
+}
