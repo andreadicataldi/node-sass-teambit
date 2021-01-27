@@ -27,7 +27,7 @@ main {
   .jumbotron {
     background-color: $teambitWhite;
     height: 510px;
-    margin-top: 50px;
+    margin-top: 60px;
     .jumbotron-container {
       @include container();
       display: flex;
@@ -65,6 +65,55 @@ main {
         width: 50%;
         img {
           width: 100%;
+        }
+      }
+    }
+  }
+  .pink {
+    height: 1910px;
+    background-color: $teambitPink;
+    h2 {
+      @include h2();
+      max-width: 50%;
+      text-align: center;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      margin: auto;
+    }
+    .pink-container {
+      @include container();
+      .pink1,
+      .pink2 {
+        height: 50%;
+        img {
+          height: 300px;
+          margin-left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .pink1 {
+        border-bottom: 1px solid $teambitBrown;
+      }
+      .cards {
+        display: flex;
+        width: 850px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 120px;
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          img {
+            height: 100px;
+            margin-bottom: 30px;
+          }
+          p {
+            font-size: 18px;
+            text-align: center;
+          }
         }
       }
     }

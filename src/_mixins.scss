@@ -38,6 +38,11 @@
   font-weight: 600;
   line-height: 1.4;
 }
+@mixin h2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.533334;
+}
 @mixin pJumbotron {
   font-size: 22px;
   line-height: 1.5;

@@ -60,7 +60,7 @@ body {
 main .jumbotron {
   background-color: #ffffff;
   height: 510px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 main .jumbotron .jumbotron-container {
   height: 100%;
@@ -118,4 +118,58 @@ main .jumbotron .jumbotron-container .jumbotron-img {
 }
 main .jumbotron .jumbotron-container .jumbotron-img img {
   width: 100%;
+}
+main .pink {
+  height: 1910px;
+  background-color: #ffe7d2;
+}
+main .pink h2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.533334;
+  max-width: 50%;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: auto;
+}
+main .pink .pink-container {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+}
+main .pink .pink-container .pink1,
+main .pink .pink-container .pink2 {
+  height: 50%;
+}
+main .pink .pink-container .pink1 img,
+main .pink .pink-container .pink2 img {
+  height: 300px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+main .pink .pink-container .pink1 {
+  border-bottom: 1px solid #58402c;
+}
+main .pink .pink-container .cards {
+  display: flex;
+  width: 850px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 120px;
+}
+main .pink .pink-container .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .pink .pink-container .cards .card img {
+  height: 100px;
+  margin-bottom: 30px;
+}
+main .pink .pink-container .cards .card p {
+  font-size: 18px;
+  text-align: center;
 }
